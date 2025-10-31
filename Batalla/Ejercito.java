@@ -5,8 +5,8 @@ import java.util.*;
 public class Ejercito {
     private String reino;
     private boolean esArray;
-    private Soldado[] soldadosArray;      // si esArray true
-    private ArrayList<Soldado> soldadosList; // si esArray false
+    private Soldado[] soldadosArray;  
+    private ArrayList<Soldado> soldadosList; 
     private int cantidad; 
 
     public Ejercito(String reino, boolean esArray, int cantidad) {
