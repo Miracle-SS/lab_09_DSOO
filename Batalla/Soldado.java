@@ -2,8 +2,8 @@ package Batalla;
 
 public abstract class Soldado {
     protected String nombre;
-    protected int vidaMax;     // nivel de vida declarado
-    protected int vidaActual;  // vida que puede cambiar por bonificaciones
+    protected int vidaMax;   
+    protected int vidaActual;
     protected int ataque;
     protected int defensa;
     protected int fila;
