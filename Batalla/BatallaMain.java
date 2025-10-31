@@ -33,14 +33,12 @@ public class BatallaMain {
     }
 
     private static void ejecutarBatalla() {
-        // elegir dos reinos diferentes
         String reino1 = REINOS[rand.nextInt(REINOS.length)];
         String reino2;
         do {
             reino2 = REINOS[rand.nextInt(REINOS.length)];
         } while (reino2.equals(reino1));
 
-        // generar cantidades 1..10
         int cant1 = rand.nextInt(10) + 1;
         int cant2 = rand.nextInt(10) + 1;
 
@@ -50,14 +48,11 @@ public class BatallaMain {
         Mapa mapa = new Mapa();
         mapa.generarEjercitos(e1, e2);
 
-        // Mostrar tablero
         mapa.dibujarMapa(e1, e2);
 
-        // Mostrar datos completos
         e1.mostrarTodosDatos();
         e2.mostrarTodosDatos();
 
-        // Mostrar soldado de mayor vida y promedio
         Soldado m1 = e1.getSoldadoMayorVida();
         Soldado m2 = e2.getSoldadoMayorVida();
         System.out.println("\nMayor vida Ejército 1 (" + e1.getReino() + "): " +
