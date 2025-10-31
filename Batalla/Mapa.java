@@ -28,14 +28,11 @@ public class Mapa {
     // genera dos ejercitos y los posiciona en el mapa
     // reino1 y reino2 deben ser diferentes
     public void generarEjercitos(Ejercito e1, Ejercito e2) {
-        // reinicio ocupadas
         for (int i = 0; i < TAM; i++) for (int j = 0; j < TAM; j++) ocupada[i][j] = false;
 
-        // crear soldados para cada ejercito y colocarlos
         generarParaEjercito(e1, 1);
         generarParaEjercito(e2, 2);
 
-        // las bonificaciones por territorio
         aplicarBonificaciones(e1);
         aplicarBonificaciones(e2);
     }
